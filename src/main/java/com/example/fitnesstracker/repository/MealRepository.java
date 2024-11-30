@@ -16,6 +16,6 @@ public interface MealRepository extends JpaRepository<Meal, Long> {
 
 
 
-    // Fetch all meals for a specific user within a date range
+    // Fetch all meals for a specifi user within a date range
     List<Meal> findByUserAndTimestampBetween(User user, LocalDateTime start, LocalDateTime end);
 }
